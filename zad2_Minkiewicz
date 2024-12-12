@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Tables Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Definition Table 1</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>HyperText Markup Language, the standard language for creating web pages.</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Cascading Style Sheets, used to style and layout web pages.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Definition Table 2</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JavaScript</td>
+                <td>A programming language used to make web pages interactive.</td>
+            </tr>
+            <tr>
+                <td>API</td>
+                <td>Application Programming Interface, a set of rules for building software applications.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
 
