@@ -1,82 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Tables Example</title>
+    <title>CSS i HTML</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 20px;
-            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            text-align: center;
         }
         table {
-            width: 80%;
+            width: 100%;
             border-collapse: collapse;
-            margin: 20px auto;
-            background-color: #fff;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
         }
         th, td {
-            border: 1px solid #ddd;
-            text-align: left;
             padding: 10px;
+            text-align: left;
         }
         th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #ddd;
-        }
-        h2 {
-            text-align: center;
-            margin-top: 40px;
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 <body>
-    <h2>Definition Table 1</h2>
+    <h1>Definicja CSS - Kaskadowych Arkuszy Stylów</h1>
+    <p>
+        <strong>CSS</strong> - Kaskadowe Arkusze Stylów (ang. Cascading Style Sheets) jest to specjalny język
+        stworzony w celu elastycznego zarządzania sposobem formatowania (wyglądem) elementów
+        znajdujących się na stronach WWW.
+    </p>
+
+    <h2>Cechy modyfikowania formatowania w:</h2>
     <table>
         <thead>
             <tr>
-                <th>Term</th>
-                <th>Definition</th>
+                <th>w HTML</th>
+                <th>w CSS</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>HTML</td>
-                <td>HyperText Markup Language, the standard language for creating web pages.</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Cascading Style Sheets, used to style and layout web pages.</td>
+                <td>
+                    modyfikacja wyglądu elementów strony jest bardzo żmudna (atrybuty i znaczniki które
+                    za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając ze
+                    strukturą dokumentu).
+                </td>
+                <td>
+                    rozdzielenie <strong>struktury i prezentacji</strong> dokumentów czyli: wszystkie polecenia
+                    dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je
+                    z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób
+                    sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.
+                </td>
             </tr>
         </tbody>
     </table>
 
-    <h2>Definition Table 2</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Term</th>
-                <th>Definition</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>JavaScript</td>
-                <td>A programming language used to make web pages interactive.</td>
-            </tr>
-            <tr>
-                <td>API</td>
-                <td>Application Programming Interface, a set of rules for building software applications.</td>
-            </tr>
-        </tbody>
-    </table>
+    <h2>Nowe możliwości CSS</h2>
+    <ol>
+        <li>
+            Przestarzałe atrybuty i znaczniki, znajdujące się bezpośrednio w składni HTML, które
+            dotyczą formatowania (elementy <em>deprecjonowane</em>), będą stopniowo wycofywane przez
+            przeglądarki na rzecz rekomendowanych analogicznych rozwiązań.
+        </li>
+    </ol>
 </body>
 </html>
-
